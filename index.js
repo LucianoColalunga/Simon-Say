@@ -35,6 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
         gameSequence.forEach((color, index) => {
             setTimeout(() => {
                 animateColor(color);
+                playSound(color);
             }, delay);
             delay += 1000;
         });
@@ -44,6 +45,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const color = event.target.id;
         playerSequence.push(color);
         animateColor(color);
+        playSound(color);
         checkPlayerMove();
     }
 
@@ -51,6 +53,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const currentMoveIndex = playerSequence.length - 1;
         if (playerSequence[currentMoveIndex] !== gameSequence[currentMoveIndex]) {
             alert('Game Over! You reached round ' + round);
+           
             startGame(); // Reiniciar el juego
             return;
         }
@@ -69,4 +72,37 @@ document.addEventListener('DOMContentLoaded', () => {
 
 });
 
-console.log();
+
+const audioBlue = new Audio('blue.mp3');
+const audioGreen = new Audio('green.mp3');
+const audioRed = new Audio('red.mp3');
+const audioYellow = new Audio('yellow.mp3');
+const audioError = new Audio('error.mp3');
+const audioWin = new Audio('win.mp3');
+
+function playSound(color) {
+    switch (color) {
+        case 'blue':
+            audioBlue.play();
+            break;
+        case 'green':
+            audioGreen.play();
+            break;
+        case 'red':
+            audioRed.play();
+            break;
+        case 'yellow':
+            audioYellow.play();
+            break;
+        case 'error':
+            audioError.play();
+            break;
+        case 'win':
+            audioWin.play();
+            break;
+        default:
+            console.log(`Sound for color ${color} not found.`);
+            break;
+    }
+}
+   
