@@ -7,7 +7,7 @@
     color: white;
     background-color:#4187c0 ;
     margin-top: 20px;
-    border-radius: 20px;
+    border-radius: 5px;
     border-bottom: 3px solid;
     border-color: black;
     
@@ -18,7 +18,7 @@
     color: white;
     background-color:#4187c0 ;
     margin-top: 20px;
-    border-radius: 20px;
+    border-radius: 5px;
     border-bottom: 3px solid;
     border-color: black;
 }
@@ -27,7 +27,7 @@
     color: white;
     background-color:#4187c0 ;
     margin-top: 20px;
-    border-radius: 20px;
+    border-radius: 5px;
     padding: 10px;
     
 }
@@ -46,7 +46,7 @@
     background-color: blue;
     opacity: 0.5;
     padding: 50px;
-    border-radius: 30px;
+    border-radius: 5px;
     margin: 5px;
 
 }
@@ -57,7 +57,7 @@
     background-color: green;
     opacity: 0.5;
     padding: 50px;
-    border-radius: 30px;
+    border-radius: 5px;
     margin: 5px;
 }
 
@@ -68,7 +68,7 @@
     background-color: red;
     opacity: 0.5;
     padding: 50px;
-    border-radius: 30px;
+    border-radius: 5px;
     margin: 5px;
 }
 
@@ -79,7 +79,7 @@
     background-color: yellow;
     opacity: 0.5;
     padding: 50px;
-    border-radius: 30px;
+    border-radius: 5px;
     margin: 5px;
 }
 
