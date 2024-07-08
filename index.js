@@ -54,7 +54,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (playerSequence[currentMoveIndex] !== gameSequence[currentMoveIndex]) {
             alert('Game Over! You reached round ' + round);
            
-            startGame(); // Reiniciar el juego
+            startGame(); 
             return;
         }
         if (playerSequence.length === gameSequence.length) {
@@ -64,9 +64,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function animateColor(color) {
         const button = document.getElementById(color);
-        button.style.opacity = 1;  // Aumenta la opacidad a 1
+        button.style.opacity = 1;  
         setTimeout(() => {
-            button.style.opacity = 0.5;  // Restaura la opacidad a 0.5 después de 500ms
+            button.style.opacity = 0.5;  
         }, 500);
     }
 

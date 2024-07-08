@@ -3,6 +3,7 @@
     }
 
 #Simon {
+    font-size: 40px;
     font-family: cursive;
     color: white;
     background-color:#4187c0 ;
@@ -14,6 +15,7 @@
 }
 
 #round {
+    font-size: 40px;
     font-family: cursive;
     color: white;
     background-color:#4187c0 ;
@@ -33,6 +35,7 @@
 }
 
 .simon-button {
+    font-size: 40px;
     width: 150px;
     height: 150px;
     margin: 20px;
