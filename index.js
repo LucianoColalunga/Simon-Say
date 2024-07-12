@@ -6,9 +6,9 @@ document.addEventListener('DOMContentLoaded', () => {
     let playerSequence = [];
     let round = 0;
 
-    const startButton = document.querySelector('start');
-    const roundDisplay = document.querySelector('round');
-    const colorButtons = colors.map(color => document.querySelector(color));
+    const startButton = document.getElementById('start');
+    const roundDisplay = document.getElementById('round');
+    const colorButtons = colors.map(color => document.getElementById(color));
 
     startButton.addEventListener('click', startGame);
 
